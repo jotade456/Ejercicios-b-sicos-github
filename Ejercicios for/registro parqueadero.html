@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Bienvenido al programa que registra vehiculos en un parqueadero");
+        let vehiculos = [];
+        let cantidadVehiculos=0;
+        let placa=0;
+        let hora=0;
+
+        cantidadVehiculos=parseInt(prompt("Ingrese cantidad de vehículos a registrar"));
+
+        for(i=0;i<=cantidadVehiculos;i++){
+            let placa = prompt("Ingrese la placa del vehiculo");
+            let hora = prompt("Ingrese la hora de ingreso del vehiculo");
+            let auxVehiculo = {placa:placa,hora:hora}
+                vehiculos.push(auxVehiculo);
+        }
+
+        console.log("Vehiculos registrados son: ",{vehiculos});
+    </script>
+</body>
+</html>

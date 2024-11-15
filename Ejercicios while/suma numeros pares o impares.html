@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log("Bienvenido a la suma de números pares o impares");
+
+    var num=0;
+    var sumaPar = 0;
+    var sumaImpar = 0;
+    var aux= 1;
+    
+    num=parseInt(prompt("Ingrese numero"));
+
+    while (aux <= num) {
+        if (aux % 2 === 0) {
+            sumaPar += aux;
+            console.log(aux);
+        } else {
+            sumaImpar += aux;
+            console.log(aux);
+        }
+        aux++;
+    }
+    console.log("La suma de los numeros pares es "+sumaPar);
+    console.log("La suma de los numeros impares es "+sumaImpar);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Este programa valida si la temperatura es adecuada");
+
+        var temperatura=0;
+
+        do{
+            temperatura = parseFloat(prompt("Ingrese temperatura"));
+            console.log("Temperatura ingresada "+temperatura)
+            if (temperatura<15 || temperatura>25){
+                console.log("La temperatura no es adecuada")
+            }
+            else{
+                console.log("La temperatura es adecuada")
+            }
+        }while (temperatura<15 || temperatura>25);
+    </script>
+</body>
+</html>

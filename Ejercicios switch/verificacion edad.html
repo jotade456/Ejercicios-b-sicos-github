@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Bienvenido al programa que verifica tu edad");
+        var edad=0;
+        
+        edad=parseInt(prompt("Ingrese su edad"));
+        
+        switch(true){
+            case (edad>=0 && edad<=12):
+            console.log("Eres categoría niño");
+            break;
+
+            case (edad>=13 && edad<=18):
+            console.log("Eres categoría adolescente");
+            break;
+
+            case (edad>=19 && edad<=64):
+            console.log("Eres categoría adulto");
+            break;
+
+            case (edad>64):
+            console.log("Eres adulto mayor");
+            break;
+
+            default:
+            console.log("Edad invalida");
+            break;
+        }
+    </script>
+</body>
+</html>

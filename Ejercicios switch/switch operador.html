@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Bienvenido al programa que calcula tu nota");
+        var numero1=0;
+        var numero2=0;
+        var operador="";
+        
+        numero1=parseFloat(prompt("Ingrese un número"));
+        numero2=parseFloat(prompt("Ingrese otro número"));
+        operador=prompt("Ingrese el operador (+,-,*,/)");
+        
+        
+        switch(true){
+            case (operador=="+"):
+            console.log("La suma de los dos números es: ",numero1+numero2);
+            break;
+
+            case (operador=="-"):
+            console.log("La resta de los dos números es: ",numero1-numero2);
+            break;
+
+            case (operador=="*"):
+            console.log("La multiplicación de los dos números es: ",numero1*numero2);
+            break;
+
+            case (operador=="/"):
+            console.log("La división de los dos números es: ",numero1/numero2);
+            break;
+
+            default:
+            console.log("Error");
+            break;
+        }
+    </script>
+</body>
+</html>

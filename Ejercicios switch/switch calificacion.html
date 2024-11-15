@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Bienvenido al programa que calcula tu nota");
+        var calficacion=0;
+        
+        calificacion=parseInt(prompt("Ingrese su nota"));
+        ;
+        
+        switch(true){
+            case (calificacion>=0 && calificacion<=20):
+            console.log("Calificación: F");
+            break;
+
+            case (calificacion>=21 && calificacion<=40):
+            console.log("Calificación: E");
+            break;
+
+            case (calificacion>=41 && calificacion<=60):
+            console.log("Calificación: D");
+            break;
+
+            case (calificacion>=61 && calificacion<=80):
+            console.log("Calificación: C");
+            break;
+
+            case (calificacion>=81 && calificacion<=90):
+            console.log("Calificación: B");
+            break;
+
+            case (calificacion>=91 && calificacion<=100):
+            console.log("Calificación: A");
+            break;
+
+            default:
+            console.log("Nota invalida");
+            break;
+        }
+    </script>
+</body>
+</html>
