@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Este programa permite elegir una opción del menú hasta detenerse");
+        
+        let accion = 0;
+        let opcion = 0;
+
+        do {
+            console.log("Bienvenido al menú de comidas rápidas");
+            console.log("1. Perro caliente");
+            console.log("2. Hamburguesa");
+            console.log("3. Tacos");
+            console.log("4. Detenerse");
+            let opcion = prompt("Ingrese el número de la opción que desee:\n1. Perro caliente\n2. Hamburguesa\n3. Tacos\n4. Detenerse");
+
+            switch (opcion) {
+                case "1":
+                    console.log("Usted ha elegido un perro caliente");
+                    break;
+                case "2":
+                    console.log("Usted ha elegido una hamburguesa");
+                    break;
+                case "3":
+                    console.log("Usted ha elegido tacos");
+                    break;
+                case "4":
+                    console.log("Usted ha decidido detenerse");
+                    accion = 4;
+                    break;
+                default:
+                    console.log("Opción inválida, por favor vuelva a intentarlo");
+            }
+        } while (accion != 4);
+    </script>
+</body>
+</html>
